@@ -14,25 +14,42 @@
 // getelementbyid
 
 // console.log(document.getElementById('header-title'));
-var headerTitle = document.getElementById('header-title');
-var header = document.getElementById('main-header');
-console.log(headerTitle);
+// var headerTitle = document.getElementById('header-title');
+// var header = document.getElementById('main-header');
+// console.log(headerTitle);
 // headerTitle.textContent = "Hello";
 // headerTitle.innerText = "world";
 // console.log(headerTitle.textContent);
 // headerTitle.innerHtml = '<h3>Vishnu<h3/>';
 // headerTitle.style.borderBottom = '2px solid black';
-header.style.bodrderBottom = ' solid 3px black';
-var items = document.getElementsByClassName('list-group-item');
-console.log(items);
-items[1].textContent = "Hello";
-items[1].style.fontWeight = 'bold';
+// header.style.bodrderBottom = ' solid 3px black';
+// var items = document.getElementsByClassName('list-group-item');
+// console.log(items);
+// items[1].textContent = "Hello";
+// items[1].style.fontWeight = 'bold';
 // items[1].style.backgroundColor = 'yellow';
 
-for(var a=0; a<items.length; a++) {
-    items[a].style.backgroundColor = '#f4f4f4';
-    items[a].style.fontWeight = 'bold';
+// for(var a=0; a<items.length; a++) {
+//     items[a].style.backgroundColor = '#f4f4f4';
+//     items[a].style.fontWeight = 'bold';
+// }
+// items[2].style.backgroundColor = 'Green';
+
+var li = document.getElementsByTagName('li');
+console.log(li);
+for(var i=0; i<li.length; i++) {
+    li[i].style.backgroundColor = "lightgrey";
 }
-items[2].style.backgroundColor = 'Green';
+li[4].style.padding = '10px 20px';
+// li[li.length].style.pading = '10px';
+li[4].style.listStyleType = 'none';
+
+var liclass = document.getElementsByClassName('newli');
+liclass[0].style.backgroundColor = '#f5f5f5';
+
+
+
+
+
 
 
