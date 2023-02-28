@@ -29,5 +29,10 @@ items[1].textContent = "Hello";
 items[1].style.fontWeight = 'bold';
 // items[1].style.backgroundColor = 'yellow';
 
+for(var a=0; a<items.length; a++) {
+    items[a].style.backgroundColor = '#f4f4f4';
+    items[a].style.fontWeight = 'bold';
+}
+items[2].style.backgroundColor = 'Green';
 
 
