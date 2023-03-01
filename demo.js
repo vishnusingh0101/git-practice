@@ -35,17 +35,50 @@
 // }
 // items[2].style.backgroundColor = 'Green';
 
-var li = document.getElementsByTagName('li');
-console.log(li);
-for(var i=0; i<li.length; i++) {
-    li[i].style.backgroundColor = "lightgrey";
-}
-li[4].style.padding = '10px 20px';
-// li[li.length].style.pading = '10px';
-li[4].style.listStyleType = 'none';
+// var li = document.getElementsByTagName('li');
+// console.log(li);
+// for(var i=0; i<li.length; i++) {
+//     li[i].style.backgroundColor = "lightgrey";
+// }
+// li[4].style.padding = '10px 20px';
+// // li[li.length].style.pading = '10px';
+// li[4].style.listStyleType = 'none';
 
-var liclass = document.getElementsByClassName('newli');
-liclass[0].style.backgroundColor = '#f5f5f5';
+// var liclass = document.getElementsByClassName('newli');
+// liclass[0].style.backgroundColor = '#f5f5f5';
+
+// QUERYSELECTOR //
+var header = document.querySelector("#main-header");
+header.style.borderBottom = 'solid 4px #ccc';
+
+var input = document.querySelector('input');
+input.value =  'Hello';
+var btn = document.querySelector('input[type="submit"]');
+btn.value = 'send';
+
+// var item = document.querySelector('.list-group-item');
+// item.style.color = 'red';
+
+// var item1 = document.querySelector('.list-group-item:last-child');
+// item1.style.color = 'corol';
+
+// var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+// secondItem.style.backgroundColor = 'green';
+
+// var thirdItem = document.querySelector('.list-group-item:nth-child(3)');
+// thirdItem.style.visibility = 'hidden';
+
+// QUERYSELECTORALL //  
+
+var item = document.querySelectorAll('.list-group-item');
+item[1].style.color = 'green';
+
+var odd = document.querySelectorAll('li:nth-child(odd)');
+for(var i=0; i<odd.length; i++) {
+    odd[i].style.backgroundColor = 'lightgreen';
+}
+
+
 
 
 
