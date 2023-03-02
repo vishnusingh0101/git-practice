@@ -112,28 +112,29 @@
 // console.log(itemlist.previousElementSibling);
 // itemlist.previousElementSibling.style.color = 'blue';
 
-var newDiv = document.createElement('div');
+// var newDiv = document.createElement('div');
 
-newDiv.className = 'Hello';
-newDiv.id = 'hello1';
-newDiv.setAttribute('title', 'hello Div');
+// newDiv.className = 'Hello';
+// newDiv.id = 'hello1';
+// newDiv.setAttribute('title', 'hello Div');
 
-var newDivtext = document.createTextNode('Hello');
-newDiv.appendChild(newDivtext);
-console.log(newDiv);
+// var newDivtext = document.createTextNode('Hello');
+// newDiv.appendChild(newDivtext);
+// console.log(newDiv);
 
-var container = document.querySelector('header .container');
-var h1 = document.querySelector('header h1');
+// var container = document.querySelector('header .container');
+// var h1 = document.querySelector('header h1');
 
-console.log(newDiv);
+// console.log(newDiv);
 
-container.insertBefore(newDiv, h1);
+// container.insertBefore(newDiv, h1);
 
-newDiv.style.fontSize = '37px';
+// newDiv.style.fontSize = '37px';
 
-var box = document.querySelector('#main, .container1');
-var item = document.querySelector('#main .title1');
-box.insertBefore(newDiv, item);
+// var box = document.querySelector('#main, .container1');
+// var item = document.querySelector('#main .title1');
+// box.insertBefore(newDiv, item);
+
 
 
 
