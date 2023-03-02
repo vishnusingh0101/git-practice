@@ -15,6 +15,7 @@ function addItem(e) {
 
     //Get input value
     var newItem = document.getElementById('item');
+    var newDescrip = document.getElementById('descrip');
 
     //Create new li element
     var li = document.createElement('li');
@@ -22,6 +23,8 @@ function addItem(e) {
     li.className = 'list-group-item';
     //add text Node with input value
     li.appendChild(document.createTextNode(newItem.value));
+    li.appendChild(document.createTextNode(' '));
+    li.appendChild(document.createTextNode(descrip.value));
 
     //Create del button element
     var deleteBtn = document.createElement('button');
@@ -35,8 +38,8 @@ function addItem(e) {
     editBtn.appendChild(document.createTextNode('E'));
 
     //append button to li
-    li.appendChild(editBtn);
     li.appendChild(deleteBtn);
+    li.appendChild(editBtn);
     
 
     itemList.appendChild(li);
@@ -61,7 +64,8 @@ function filterItems(e) {
     //convert to an array
     Array.from(items).forEach(function(item) {
         var itemName = item.firstChild.textContent;
-        if(itemName.toLowerCase().indexOf(text) != -1)  {
+        var descripName = item.nextSibling.textContent;
+        if(itemName.toLowerCase().indexOf(text) != -1 || descripName.toLowerCase().indexOf(text) != -1)  {
             item.style.display = 'block';
         }else {
             item.style.display = 'none';
